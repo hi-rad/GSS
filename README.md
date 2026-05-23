@@ -104,4 +104,22 @@ You need to run the following commands to see the results:
   ```
 
 ## Cite
-TBD
+If you find the content useful for your research and applications, please cite us using this BibTeX:
+
+```bibtex
+@InProceedings{pmlr-v304-daneshvar26a,
+  title = 	 {Efficient Subsampling for GNN Downstream Tasks},
+  author =       {Daneshvar, Hirad and Samavi, Reza},
+  booktitle = 	 {Proceedings of the 17th Asian Conference on Machine Learning},
+  pages = 	 {1070--1085},
+  year = 	 {2025},
+  editor = 	 {Lee, Hung-yi and Liu, Tongliang},
+  volume = 	 {304},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {09--12 Dec},
+  publisher =    {PMLR},
+  pdf = 	 {https://raw.githubusercontent.com/mlresearch/v304/main/assets/daneshvar26a/daneshvar26a.pdf},
+  url = 	 {https://proceedings.mlr.press/v304/daneshvar26a.html},
+  abstract = 	 {While Graph Neural Networks (GNNs) have shown significant promise for data integration using graph structures, methods to support subsampling graph data are lagging. To address this gap, in this paper, we propose a novel importance-based data subsampling framework. This framework strategically identifies inputs from a primary graph dataset based on their impact on the model’s learning of downstream tasks, such as graph or node classification. Our measure of impact is the predictive uncertainty of each data point. To ensure the subsample is well-representative of the original sample, we cluster them based on their learned graph representation. Finally, subsampling is performed from these identified clusters. The process favours selecting data points with greater prediction uncertainty, while preserving the diversity of the overall sample. We evaluate our approach using a multi-source, real-world dataset on child and youth mental health, comprising emergency department (ED) admissions and mental health questionnaire data. Our experimental results demonstrate that training a GNN with samples identified by the proposed framework yields a statistically significant improvement (on average, 10.13% improvement across metrics from the baseline approach) in predictive performance compared to training on a randomly selected subset of patients. The code is available at https://github.com/tailabTMU/GSS.}
+}
+```
